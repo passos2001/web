@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Consulta de Membresía</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="video-fondo">
+      <source src="img/Fondo.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- Capa de oscurecimiento -->
+    <div class="overlay"></div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+      <img src="img/FDELTA.png" alt="Fuerza Delta Logo" class="logo">
+      <h2>Consulta tu Membresía</h2>
+      <p>Ingresa tu número de cédula:</p>
+      <input type="text" id="cedula" placeholder="Ej: 1234567890"
+        autocomplete="off">
+      <br>
+      <button onclick="consultar()">Consultar</button>
+      <div class="resultado" id="resultado"></div>
+    </div>
+
+    <script type="module" src="js/mensualidades.js"></script>
+  </body>
+</html>
